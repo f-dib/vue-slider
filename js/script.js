@@ -56,5 +56,7 @@ createApp({
                 this.activeSlideIndex = this.slides.length - 1;
             }
         },
+
+        
     }
 }).mount('#app');
