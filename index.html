@@ -16,7 +16,7 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div v-for="(currentSlide, index) in slides" class="item" v-show="index == activeSlideIndex">
+                <div v-for="(currentSlide, index) in slides" class="item" v-show="index == activeSlideIndex"  @mouseover="pausehover" @mouseleave="callFunction">
                     <img :src="currentSlide.image" :alt="currentSlide.title" />
                     <div class="text">
                         <h3>

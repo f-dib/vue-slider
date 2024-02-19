@@ -64,10 +64,15 @@ createApp({
         },
 
         callFunction() {
-            setInterval(() =>{
+            this.pauseplay = setInterval(() =>{
                 this.nextSlide();
             }, 3000);
-        }
+        },
+
+        pausehover(){
+            clearInterval(this.pauseplay)
+        } 
+
     },
 
     mounted() {
