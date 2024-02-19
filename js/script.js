@@ -60,8 +60,19 @@ createApp({
         changeSlide(index) {
 
             this.activeSlideIndex = index
-            
+
         },
 
+        callFunction() {
+            setInterval(() =>{
+                this.nextSlide();
+            }, 3000);
+        }
+    },
+
+    mounted() {
+        this.callFunction()
     }
+
+
 }).mount('#app');
