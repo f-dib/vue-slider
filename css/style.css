@@ -7,8 +7,16 @@
 .container {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.slider-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .item {
@@ -102,4 +110,48 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
     bottom: 35%;
     left: 50%;
     transform: translate(-50%) rotate(135deg);
+}
+
+
+@media screen and (max-width: 767px){
+
+    .container{
+        width: 720px;
+    }
+
+    .slider-wrapper{
+        flex-wrap: wrap;
+        width: 700px;
+    }
+
+    .thumbs {
+        float: bottom;
+        height: 100%;
+        width: 700px;
+        background: #000;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .thumb {
+        width: calc(100% / 5);
+    }
+
+    .prev{
+        left: 5%;
+        top: 2%;
+        transform: rotate(-90deg);
+    }
+
+    .next{
+        left: 90%;
+        top: 2%;
+        transform: rotate(-90deg);
+    }
+
+    .item {
+        float: bottom;
+    }
+
 }

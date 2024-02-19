@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slider</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/969422_10151581822564140_1843481435_n.png">
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -13,7 +15,9 @@
 
     <div id="app">
 
+
         <div class="container">
+            
             <div class="slider-wrapper" tabindex="0">
 
                 <div v-for="(currentSlide, index) in slides" class="item" v-show="index == activeSlideIndex"  @mouseover="pausehover" @mouseleave="callFunction">
